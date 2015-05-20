@@ -15,7 +15,7 @@ Working with git protocol:
 	
 		$ git commit -am "concise commit comment"
 
-3. To add new files that you want to track. You must commit them as well to start tracking.
+3. To add new files that you want to track use 'git add'. You must then commit them as well to start tracking.
 	
 		$ git add newfile.txt
 		$ git commit -am "added newfile"
