@@ -34,11 +34,14 @@ You can make links too. For example checkout the markdown dingus [here](http://d
 images
 -------
 
+images from the folder:
 ![](chip.jpg "Chip")
 
+images from the web:
 ![] (http://upload.wikimedia.org/wikipedia/commons/0/07/Glass-microreactor-chip-micronit.jpg)
 
-
+you can use html to scale the image more easily:
+<img src="chip.jpg" style="width: 400px;"/>
 
 you can make to do lists
 ------
