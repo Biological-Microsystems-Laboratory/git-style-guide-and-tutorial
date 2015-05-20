@@ -31,7 +31,7 @@ If your push was rejected someone else has already pushed changes pull down to m
 
 The following is a more detailed reference for using git and git hub: 
 
-Git and Github
+Git and GitHub
 ===
 
 [This](http://git-scm.com/book/en/Getting-Started) book is the best. 
@@ -54,7 +54,7 @@ To list identity and settings
 	
 	$ git config --list
 	
-###Initialize a repository, add a readme, a remote, and push to github
+###Initialize a repository, add a readme, a remote, and push to GitHub
 
 make a new directory and enter it, and make a file 
 
@@ -81,7 +81,7 @@ Now we will commit, this will take the first snapshot of all tracked files.
 
     $ git commit -am "initial commit"
     
-(The -a flag skips the staging step which is not important right now and the -m flag allows you to add your commit comment inline with the command rather than opening an editor.)
+(The -a flag skips the staging step which is not important right now and the -m flag allows you to add your commit comment in-line with the command rather than opening an editor.)
 
 Now open the text file that you are tracking and enter some info and save it. Now run git status. You should see the file as modified. Now commit again, and check the status again.
 
@@ -99,7 +99,7 @@ Now to look back and see what you did, run
     
 You should see two entries listing the commit hash, which will be how you refer to the commit internally, as well as yourself as the author, the date and you commit comment. 
 
-Now lets make a mirror of this repo on github. Login to git hub in your browser and make a new repository. Name it the same as the directory your working in as your computer, test. Don't initialize with a readme. Now go back to the terminal and add a remote
+Now lets make a mirror of this repository on GitHub. Login to git hub in your browser and make a new repository. Name it the same as the directory your working in as your computer, test. Don't initialize with a readme. Now go back to the terminal and add a remote
 
     $ git remote add origin https://github.com/<username>/<directory>.git
     
@@ -115,17 +115,7 @@ Now so you can see that everything is working go to the repository in Github. Yo
     
 You should see git download the changes you made and now when you look at the file on your computer it will include the edits you made through Github. Yay! also when you run git log you will see your edit and commit that you made.
 
-Using the Develop Branch
 
-1. when working on a file, pull from the Branch Develop. This will sychronize your local files with the latest files on GitHub.
-
-2. Start working on the files in your local folder. As you are working commit the changes on the Git Hub windows with short comments. 
-
-3.When you finish a product/item then go to branch master by
-git checkout branch master
-then merge the develp branch into master.
-
-4. You can also add branches and form new branches after pulling from Develop. Then you must merge that branch in to develop and and then into master. This keeps the master branch clean.
 
 Remotes
 ---
@@ -177,7 +167,20 @@ You can also quickly make a new branch and switch the HEAD to it to start workin
     $ git checkout -b newer
     
 
-Basic Command line navigation
+Using a develop Branch
+-----
+
+1. when working on a file, pull from the branch develop. This will synchronize your local files with the latest files on GitHub.
+
+2. Start working on the files in your local folder. As you are working commit the changes on the GitHub with short comments. 
+
+3. When you finish a product/item then go to branch master by
+git checkout branch master then merge the develop branch into master.
+
+4. You can also add branches and form new branches after pulling from Develop. Then you must merge that branch in to develop and and then into master. This keeps the master branch clean.
+
+
+Basic command line navigation
 ----    
 
 pwd (stands for print working directory) This tells you what folder you are in.
@@ -189,3 +192,11 @@ pwd (stands for print working directory) This tells you what folder you are in.
 To enter a directory use cd (stands for current directory)
 
 	$ cd folder
+
+To go back up to the parent folder use 
+
+	$ cd ..
+
+To go back to the default parent just type cd and press enter
+
+	$ cd
