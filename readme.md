@@ -200,3 +200,5 @@ To go back up to the parent folder use
 To go back to the default parent just type cd and press enter
 
 	$ cd
+	
+Other stuff	
