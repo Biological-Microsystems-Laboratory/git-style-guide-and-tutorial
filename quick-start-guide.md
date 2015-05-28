@@ -1,4 +1,4 @@
-Quick start guide
+Quick Start Guide
 =================
 
 This guide will get git set-up for you and allow you to start contributing to a repository.
