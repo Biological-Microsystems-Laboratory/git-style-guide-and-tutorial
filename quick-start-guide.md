@@ -7,18 +7,19 @@ First install git: [http://git-scm.com/downloads](http://git-scm.com/downloads) 
 
 Now that you have git installed open a terminal widow (or start Git Bash on windows).
 
-First you'll want to navigate to a directory (folder) that you want to put the repository (git folder). [Here](http://www.st-andrews.ac.uk/ITS/training/unix/unix1.html) is a quick reference for commands. *Tip: you can drag a file or directory in to the terminal or bash window to paste it's location.*
-
 One quick thing before we get started is to tell git your identity. In the terminal or Git Bash run:
 
 	git config --global user.name "mbrenn3" (obviously use your user name)
 	git config --global user.email email@uic.edu
 
+First you'll want to navigate to a directory (folder) that you want to put the repository (git folder). [Here is a quick reference for commands for navigating directories in the command line](http://www.st-andrews.ac.uk/ITS/training/unix/unix1.html)  *Tip: you can drag a file or directory into the terminal or bash window to paste it's location.*
+
+
 For this example we will put the git repository in our Documents folder. So first get to that folder by running:
 
 	$ cd Documents
 
-Now find the repository on GitHub that you want to work on and clone it. At the bottom of the right side of a GitHub repository page you should see a clone URL. Below is the command for cloning the oxygen measurement repository. *Tip: you can copy the URL and then paste it in to Git Bash with the 'insert' key.
+Now find the repository on GitHub that you want to work on and clone it. At the bottom of the right side of a GitHub repository page you should see a clone URL. Below is the command for cloning the oxygen measurement repository. *Tip: you can copy the URL and then paste it into Git Bash with the 'insert' key.
 
 	$ git clone https://github.com/Biological-Microsystems-Laboratory/oxygen-measurement.git
 
@@ -40,7 +41,7 @@ Now when you run 'git status' you will see that file as being marked to be track
 
 	$ git commit -am 'this is my commit message'
 
-Now that you have a commit you are ready to push changes to GitHub. (Note: you can make a series of commits before pushing. You don't need to push after every commit.) Run
+Now that you have a commit you are ready to push changes to GitHub. (Note: you can make a series of commits before pushing. You don't need to push after every commit.) Run:
 
 	$ git push
 
